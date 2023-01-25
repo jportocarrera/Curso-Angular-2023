@@ -1,0 +1,25 @@
+<h1>Desafio #2</h1>
+<br/>
+<h2>{{ subtitulo }}</h2>
+
+<body>
+    <div class="container">
+        <div class="tarjeta" *ngFor="let estudiante of listaEstudiantes"
+        >
+            <div    [style.background]="estudiante.carrera === 1 ? '#BB60E6' : 
+                                        estudiante.carrera === 2 ? '#60A7E6' : '#A8E0AC' "
+                    class="informacion"
+                >
+                <div [ngSwitch]="estudiante.carrera">
+                    <h4 *ngSwitchCase="1">Filosofía</h4>
+                    <h4 *ngSwitchCase="2">Computación</h4>
+                    <h4 *ngSwitchDefault>Ciencias</h4>
+                </div>
+                <p>Nombres: {{ estudiante.nombre }} {{ estudiante.apellido }}</p>
+                <p>Edad: {{ estudiante.edad }} </p>
+                <p>Email: {{estudiante.nombre}}@coder.edu.wrl </p>
+                <p>Activo: {{estudiante.estadoActivo}} </p>
+            </div>
+        </div>
+    </div>
+</body>

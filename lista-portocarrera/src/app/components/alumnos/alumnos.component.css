@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2 {
+    text-align: center;
+}
+body{
+    width: 100%;
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+   /* max-width: 1800px;*/
+}
+.tarjeta{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    display: flex;
+}
+.tarjeta:hover{
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%) ;
+}
+.tarjeta .informacion{
+    padding: 15px;
+    text-align: center;
+}
+.activo{
+    color:green;
+}
+.inactivo{
+    color: red;
+}
