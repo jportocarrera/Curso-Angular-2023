@@ -1,0 +1,21 @@
+.principal{
+    margin-top: 50px;
+}
+.card-header-first{
+    margin-top: -40px;
+    height: 100px;
+    background: linear-gradient(-90deg, #BF019F, #F28A57);
+    box-shadow: 1px 5px 15px #A2A2A2;
+}
+.card-section{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.card-section:hover{
+    box-shadow: 1px 1px 20px #D2D2D2;
+}
+.alarm-danger{
+    color: #BF019F;
+}
+.alarm-ready{
+    color: #01bf8f;
+}
