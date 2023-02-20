@@ -1,0 +1,30 @@
+<mat-nav-list>
+    <a mat-list-item (click)="onShow()">
+      <mat-icon>insert_chart</mat-icon>
+      <span class="nav-space">Dashboard</span>
+    </a>
+  
+    <a mat-list-item (click)="onAdd()">
+      <mat-icon fontIcon="person_add"></mat-icon>
+
+      <!--<mat-icon>add</mat-icon>  -->
+      <span class="nav-space">Añadir</span> 
+    </a>
+
+    <a mat-list-item (click)="onEdit()">
+        <mat-icon>edit</mat-icon>
+        <span class="nav-space">Editar</span>
+    </a>
+
+    <a mat-list-item (click)="onDelete()">
+        <mat-icon>delete</mat-icon>
+        <span class="nav-space">Eliminar</span>
+    </a>
+  
+    <a mat-list-item (click)="onExit()">
+      <!--<mat-icon fontIcon="thumb_up"></mat-icon>-->
+
+      <mat-icon>exit_to_app</mat-icon>
+      <span class="nav-space">Exit</span>
+    </a>
+  </mat-nav-list>

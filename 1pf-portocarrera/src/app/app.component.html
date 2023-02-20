@@ -1,0 +1,11 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side">
+        <mat-toolbar>Menu</mat-toolbar>
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-navbar (toggleSidenav)="sidenav.toggle()"></app-navbar>
+        <app-material></app-material>
+    </mat-sidenav-content>
+    
+  </mat-sidenav-container>
